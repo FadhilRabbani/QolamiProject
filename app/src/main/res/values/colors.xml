@@ -5,4 +5,11 @@
     <color name="main_background">#FFF6DA</color>
     <color name="title_color">#814142</color>
     <color name="green_sub_title">#408733</color>
+    <color name="brown_item">#663300</color>
+    <color name="orange_item">#CC6600</color>
+    <color name="darkblue_item">#1F4E79</color>
+    <color name="lightgreen_item">#009900</color>
+    <color name="purple_item">#7030A0</color>
+    <color name="red_item">#800000</color>
+
 </resources>
