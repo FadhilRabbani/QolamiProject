@@ -41,6 +41,20 @@ class PracticeActivity : AppCompatActivity() {
 //                val intentToDetail = Intent(this@MainActivity, DetailActivity::class.java)
 //                intentToDetail.putExtra("DATA", data)
 //                startActivity(intentToDetail)
+
+                when (data.name){
+                    "Pelajaran 1" ->{
+                        val intent=Intent(this@PracticeActivity,ListAlphabet_hijaiyah::class.java)
+                        startActivity(intent)
+                    }
+                    "Pelajaran 2" ->{
+                        val intent=Intent(this@PracticeActivity,ListAlphabet_fathah::class.java)
+                        startActivity(intent)
+                    }
+                    "Pelajaran 3" ->{}
+                    "Pelajaran 4" ->{}
+
+                }
             }
         })
     }
