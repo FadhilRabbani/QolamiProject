@@ -71,7 +71,7 @@
         android:backgroundTint="#663300"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/alif_kasrah" />
+        app:srcCompat="@drawable/alif" />
 
     <ImageButton
         android:id="@+id/imageButton3"
