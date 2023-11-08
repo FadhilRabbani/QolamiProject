@@ -249,7 +249,7 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton17"
         app:layout_constraintTop_toBottomOf="@+id/imageButton13"
-        app:srcCompat="@drawable/dho_fathah" />
+        app:srcCompat="@drawable/dzo_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton19"
