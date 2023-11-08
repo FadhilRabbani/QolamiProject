@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ramaraja"
-        android:text="Huruf Arab Hijaiyah Beharakat Fathah"
+        android:text="Huruf Hijaiyah Beharakat Fathah"
         android:textColor="@color/white"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"

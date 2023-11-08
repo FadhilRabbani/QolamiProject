@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ramaraja"
-        android:text="Huruf Arab Hijaiyah Beharakat Dhammah"
+        android:text="Huruf Hijaiyah Beharakat Dhammah"
         android:textColor="@color/white"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -294,7 +294,7 @@
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton17"
-        app:srcCompat="@drawable/qaf_kasrah" />
+        app:srcCompat="@drawable/qa_dhammah"/>
 
     <ImageButton
         android:id="@+id/imageButton23"
