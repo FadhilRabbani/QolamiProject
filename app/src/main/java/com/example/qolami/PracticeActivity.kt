@@ -51,8 +51,14 @@ class PracticeActivity : AppCompatActivity() {
                         val intent=Intent(this@PracticeActivity,ListAlphabet_fathah::class.java)
                         startActivity(intent)
                     }
-                    "Pelajaran 3" ->{}
-                    "Pelajaran 4" ->{}
+                    "Pelajaran 3" ->{
+                        val intent=Intent(this@PracticeActivity,ListAlphabet_kasrah::class.java)
+                        startActivity(intent)
+                    }
+                    "Pelajaran 4" ->{
+                        val intent=Intent(this@PracticeActivity,ListAlphabet_dhammah::class.java)
+                        startActivity(intent)
+                    }
 
                 }
             }
