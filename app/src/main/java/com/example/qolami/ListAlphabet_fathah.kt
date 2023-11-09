@@ -8,4 +8,5 @@ class ListAlphabet_fathah : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_alphabet_fathah)
     }
+
 }
