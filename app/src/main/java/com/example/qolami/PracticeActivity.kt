@@ -3,11 +3,13 @@ package com.example.qolami
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.qolami.databinding.ActivityMainBinding
 import com.example.qolami.databinding.ActivityPracticeBinding
 
 class PracticeActivity : AppCompatActivity() {
+    lateinit var backtoMainbutton_practice : Button
     private lateinit var binding: ActivityPracticeBinding
     private val list = ArrayList<Practice>()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +20,13 @@ class PracticeActivity : AppCompatActivity() {
 
         list.addAll(getList())
         showRecyclerList()
+
+        backtoMainbutton_practice=findViewById(R.id.backtoMain_practice)
+
+        backtoMainbutton_practice.setOnClickListener {
+            val intent = Intent(this@PracticeActivity,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getList(): ArrayList<Practice> {

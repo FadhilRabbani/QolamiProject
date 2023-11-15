@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/backtoMain_hijaiyah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -406,7 +406,7 @@
         app:srcCompat="@drawable/pelajaran_btn" />
 
     <ImageButton
-        android:id="@+id/imageButton33"
+        android:id="@+id/nextbtn_hijaiyah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -423,7 +423,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="4dp"
         android:backgroundTint="@android:color/transparent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton33"
+        app:layout_constraintEnd_toStartOf="@+id/nextbtn_hijaiyah"
         app:layout_constraintTop_toBottomOf="@+id/imageButton28"
         app:srcCompat="@drawable/ujian_btn" />
 
@@ -439,7 +439,7 @@
         app:srcCompat="@drawable/latihan_btn" />
 
     <ImageButton
-        android:id="@+id/imageButton37"
+        android:id="@+id/prevbtn_hijaiyah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

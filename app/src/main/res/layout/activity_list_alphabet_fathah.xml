@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/backtoMain_Fathah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/alif_fathahBtn"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -80,7 +80,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_2"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/alif_fathahBtn"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/ba_fathah" />
 
@@ -127,7 +127,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/alif_fathahBtn"
         app:srcCompat="@drawable/ha_fathah" />
 
     <ImageButton
@@ -384,7 +384,7 @@
         app:srcCompat="@drawable/pelajaran_btn" />
 
     <ImageButton
-        android:id="@+id/imageButton33"
+        android:id="@+id/nextbtn_fathah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -401,7 +401,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="4dp"
         android:backgroundTint="@android:color/transparent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton33"
+        app:layout_constraintEnd_toStartOf="@+id/nextbtn_fathah"
         app:layout_constraintTop_toBottomOf="@+id/imageButton30"
         app:srcCompat="@drawable/ujian_btn" />
 
@@ -417,7 +417,7 @@
         app:srcCompat="@drawable/latihan_btn" />
 
     <ImageButton
-        android:id="@+id/imageButton37"
+        android:id="@+id/prevbtn_fathah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
