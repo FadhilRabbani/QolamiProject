@@ -9,7 +9,7 @@ import android.widget.ImageButton
 
 class ListAlphabet_hijaiyah : AppCompatActivity() {
 
-    private lateinit var mediaPlayer: MediaPlayer
+    private var mediaPlayer: MediaPlayer? = null
     lateinit var backtomainButton_hijaiyah :Button
     lateinit var nextbutton_hijaiyah :ImageButton
     lateinit var prevbutton_hijaiyah :ImageButton
@@ -43,13 +43,29 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
     }
 
     private fun onButtonClick(buttonNumber: Int) {
+        if (mediaPlayer != null) {
+            if (mediaPlayer!!.isPlaying) {
+                mediaPlayer!!.stop()
+            }
+            mediaPlayer!!.release()
+            mediaPlayer = null
+        }
+
         val soundId = resources.getIdentifier("sound$buttonNumber", "raw", packageName)
         mediaPlayer = MediaPlayer.create(this, soundId)
-        mediaPlayer.start()
+
+
+        mediaPlayer?.setOnCompletionListener {
+            mediaPlayer?.release()
+            mediaPlayer = null
+        }
+
+        mediaPlayer?.start()
     }
 
     override fun onStop() {
         super.onStop()
-        mediaPlayer.release()
+        mediaPlayer?.release()
+        mediaPlayer = null
     }
 }
