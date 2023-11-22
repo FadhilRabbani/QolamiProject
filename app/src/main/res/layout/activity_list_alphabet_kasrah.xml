@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButton1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -74,6 +74,17 @@
         app:srcCompat="@drawable/alif_kasrah" />
 
     <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_shape_2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ba_kasra" />
+
+    <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -82,7 +93,7 @@
         android:background="@drawable/custom_shape_2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ba_kasra" />
+        app:srcCompat="@drawable/ta_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -93,7 +104,7 @@
         android:background="@drawable/custom_shape_2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ta_kasrah" />
+        app:srcCompat="@drawable/tsa_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -103,32 +114,32 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/tsa_kasrah" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_2"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/jim_kasrah" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imageButton6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
         app:srcCompat="@drawable/ha_kasrah" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_shape_3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/kha_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -139,7 +150,7 @@
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/kha_kasrah" />
+        app:srcCompat="@drawable/dal_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton9"
@@ -150,7 +161,7 @@
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@drawable/dal_kasrah" />
+        app:srcCompat="@drawable/dzal_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -161,29 +172,29 @@
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton9"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:srcCompat="@drawable/dzal_kasrah" />
+        app:srcCompat="@drawable/ra_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_3"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_shape_4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@drawable/ra_kasrah" />
+        app:srcCompat="@drawable/zal_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton12"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_4"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton1"
         app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-        app:srcCompat="@drawable/zal_kasrah" />
+        app:srcCompat="@drawable/sin_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton13"
@@ -194,7 +205,7 @@
         android:background="@drawable/custom_shape_4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-        app:srcCompat="@drawable/sin_kasrah" />
+        app:srcCompat="@drawable/syin_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton14"
@@ -205,7 +216,7 @@
         android:background="@drawable/custom_shape_4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton13"
         app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-        app:srcCompat="@drawable/syin_kasrah" />
+        app:srcCompat="@drawable/shod_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton15"
@@ -216,29 +227,29 @@
         android:background="@drawable/custom_shape_4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton14"
         app:layout_constraintTop_toBottomOf="@+id/imageButton10"
-        app:srcCompat="@drawable/shod_kasrah" />
+        app:srcCompat="@drawable/dhodh_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton16"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_4"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_shape_5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton11"
-        app:srcCompat="@drawable/dhodh_kasrah" />
+        app:srcCompat="@drawable/thot_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton17"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_5"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton16"
         app:layout_constraintTop_toBottomOf="@+id/imageButton12"
-        app:srcCompat="@drawable/thot_kasrah" />
+        app:srcCompat="@drawable/dho_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton18"
@@ -249,7 +260,7 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton17"
         app:layout_constraintTop_toBottomOf="@+id/imageButton13"
-        app:srcCompat="@drawable/dho_kasrah" />
+        app:srcCompat="@drawable/ain_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton19"
@@ -260,7 +271,7 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton18"
         app:layout_constraintTop_toBottomOf="@+id/imageButton14"
-        app:srcCompat="@drawable/ain_kasrah" />
+        app:srcCompat="@drawable/ghain_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton20"
@@ -271,21 +282,10 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton19"
         app:layout_constraintTop_toBottomOf="@+id/imageButton15"
-        app:srcCompat="@drawable/ghain_kasrah" />
-
-    <ImageButton
-        android:id="@+id/imageButton21"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_5"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton20"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
         app:srcCompat="@drawable/fa_kasrah" />
 
     <ImageButton
-        android:id="@+id/imageButton22"
+        android:id="@+id/imageButton21"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
@@ -293,8 +293,19 @@
 
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
         app:srcCompat="@drawable/qaf_kasrah" />
+
+    <ImageButton
+        android:id="@+id/imageButton22"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_shape_6"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton21"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
+        app:srcCompat="@drawable/kam_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton23"
@@ -305,7 +316,7 @@
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton22"
         app:layout_constraintTop_toBottomOf="@+id/imageButton18"
-        app:srcCompat="@drawable/kam_kasrah" />
+        app:srcCompat="@drawable/lam_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton24"
@@ -316,7 +327,7 @@
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton23"
         app:layout_constraintTop_toBottomOf="@+id/imageButton19"
-        app:srcCompat="@drawable/lam_kasrah" />
+        app:srcCompat="@drawable/mim_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton25"
@@ -327,32 +338,32 @@
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton24"
         app:layout_constraintTop_toBottomOf="@+id/imageButton20"
-        app:srcCompat="@drawable/mim_kasrah" />
+        app:srcCompat="@drawable/nun_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton26"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_6"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton25"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_shape_7"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton21"
-        app:srcCompat="@drawable/nun_kasrah" />
+        app:srcCompat="@drawable/wau_kasrah" />
 
     <ImageButton
         android:id="@+id/imageButton27"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_7"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton26"
         app:layout_constraintTop_toBottomOf="@+id/imageButton22"
-        app:srcCompat="@drawable/wau_kasrah" />
+        app:srcCompat="@drawable/hamza_kasrah" />
 
     <ImageButton
-        android:id="@+id/imageButton30"
+        android:id="@+id/imageButton28"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
@@ -360,17 +371,6 @@
         android:background="@drawable/custom_shape_7"
         app:layout_constraintEnd_toStartOf="@+id/imageButton27"
         app:layout_constraintTop_toBottomOf="@+id/imageButton23"
-        app:srcCompat="@drawable/hamza_kasrah" />
-
-    <ImageButton
-        android:id="@+id/imageButton31"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_7"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton30"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton24"
         app:srcCompat="@drawable/ya_kasrah" />
 
     <ImageButton
@@ -380,7 +380,7 @@
         android:layout_marginTop="36dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton35"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton30"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton27"
         app:srcCompat="@drawable/pelajaran_btn" />
 
     <ImageButton
@@ -391,7 +391,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton27"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton26"
         app:srcCompat="@drawable/next_btn" />
 
     <ImageButton
@@ -402,7 +402,7 @@
         android:layout_marginEnd="4dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/nextbtn_kasrah"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton30"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton27"
         app:srcCompat="@drawable/ujian_btn" />
 
     <ImageButton
@@ -413,7 +413,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton34"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton31"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton28"
         app:srcCompat="@drawable/latihan_btn" />
 
     <ImageButton
@@ -424,6 +424,6 @@
         android:layout_marginEnd="4dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton32"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton31"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton27"
         app:srcCompat="@drawable/prev_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/alif_fathahBtn"
+        android:id="@+id/ImageButton1"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -74,15 +74,26 @@
         app:srcCompat="@drawable/alif_fathah" />
 
     <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_shape_2"
+        app:layout_constraintEnd_toStartOf="@+id/ImageButton1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ba_fathah" />
+
+    <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_2"
-        app:layout_constraintEnd_toStartOf="@+id/alif_fathahBtn"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ba_fathah" />
+        app:srcCompat="@drawable/ta_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -93,7 +104,7 @@
         android:background="@drawable/custom_shape_2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ta_fathah" />
+        app:srcCompat="@drawable/tsa_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -103,32 +114,32 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/tsa_fathah" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_2"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/ja_fathah" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imageButton6"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alif_fathahBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ImageButton1"
         app:srcCompat="@drawable/ha_fathah" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_shape_3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/kha_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -139,7 +150,7 @@
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/kha_fathah" />
+        app:srcCompat="@drawable/dal_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton9"
@@ -150,7 +161,7 @@
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@drawable/dal_fathah" />
+        app:srcCompat="@drawable/dzal_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -161,29 +172,29 @@
         android:background="@drawable/custom_shape_3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton9"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:srcCompat="@drawable/dzal_fathah" />
+        app:srcCompat="@drawable/ra_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_3"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_shape_4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@drawable/ra_fathah" />
+        app:srcCompat="@drawable/zo_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton12"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_4"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-        app:srcCompat="@drawable/zo_fathah" />
+        app:srcCompat="@drawable/sa_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton13"
@@ -194,7 +205,7 @@
         android:background="@drawable/custom_shape_4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-        app:srcCompat="@drawable/sa_fathah" />
+        app:srcCompat="@drawable/syin_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton14"
@@ -205,7 +216,7 @@
         android:background="@drawable/custom_shape_4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton13"
         app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-        app:srcCompat="@drawable/syin_fathah" />
+        app:srcCompat="@drawable/sho_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton15"
@@ -216,29 +227,29 @@
         android:background="@drawable/custom_shape_4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton14"
         app:layout_constraintTop_toBottomOf="@+id/imageButton10"
-        app:srcCompat="@drawable/sho_fathah" />
+        app:srcCompat="@drawable/dho_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton16"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_4"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_shape_5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton11"
-        app:srcCompat="@drawable/dho_fathah" />
+        app:srcCompat="@drawable/tho_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton17"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_5"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton16"
         app:layout_constraintTop_toBottomOf="@+id/imageButton12"
-        app:srcCompat="@drawable/tho_fathah" />
+        app:srcCompat="@drawable/dzo_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton18"
@@ -249,7 +260,7 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton17"
         app:layout_constraintTop_toBottomOf="@+id/imageButton13"
-        app:srcCompat="@drawable/dzo_fathah" />
+        app:srcCompat="@drawable/ain_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton19"
@@ -260,7 +271,7 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton18"
         app:layout_constraintTop_toBottomOf="@+id/imageButton14"
-        app:srcCompat="@drawable/ain_fathah" />
+        app:srcCompat="@drawable/ghain_fathah" />
 
     <ImageButton
         android:id="@+id/imageButton20"
@@ -271,17 +282,6 @@
         android:background="@drawable/custom_shape_5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton19"
         app:layout_constraintTop_toBottomOf="@+id/imageButton15"
-        app:srcCompat="@drawable/ghain_fathah" />
-
-    <ImageButton
-        android:id="@+id/imageButton21"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/custom_shape_5"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton20"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
         app:srcCompat="@drawable/fa_fathah" />
 
     <ImageButton
@@ -290,10 +290,9 @@
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16"
         app:srcCompat="@drawable/qa_fathah" />
 
     <ImageButton
@@ -304,7 +303,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton22"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton18"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
         app:srcCompat="@drawable/kaf_fathah" />
 
     <ImageButton
@@ -315,7 +314,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton23"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton19"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton18"
         app:srcCompat="@drawable/la_fathah" />
 
     <ImageButton
@@ -326,7 +325,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton24"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton20"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton19"
         app:srcCompat="@drawable/mim_fathah" />
 
     <ImageButton
@@ -337,7 +336,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton25"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton21"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton20"
         app:srcCompat="@drawable/nun_fathah" />
 
     <ImageButton
@@ -352,7 +351,7 @@
         app:srcCompat="@drawable/wau_fathah" />
 
     <ImageButton
-        android:id="@+id/imageButton30"
+        android:id="@+id/imageButton28"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
@@ -369,7 +368,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/custom_shape_7"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton30"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton28"
         app:layout_constraintTop_toBottomOf="@+id/imageButton24"
         app:srcCompat="@drawable/ya_fathah" />
 
@@ -380,15 +379,15 @@
         android:layout_marginTop="36dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton35"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton30"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton28"
         app:srcCompat="@drawable/pelajaran_btn" />
 
     <ImageButton
         android:id="@+id/nextbtn_fathah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton27"
@@ -402,7 +401,7 @@
         android:layout_marginEnd="4dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/nextbtn_fathah"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton30"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton28"
         app:srcCompat="@drawable/ujian_btn" />
 
     <ImageButton
