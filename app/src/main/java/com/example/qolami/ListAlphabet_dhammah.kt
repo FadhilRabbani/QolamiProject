@@ -24,12 +24,12 @@ class ListAlphabet_dhammah : AppCompatActivity() {
         nextbutton_dhammah=findViewById(R.id.nextbtn_dhammah)
         prevbutton_dhammah=findViewById(R.id.prevbtn_dhammah)
 
-//        for (i in 0 until hurufList.size) {
-//            val imageView: ImageButton = findViewById(resources.getIdentifier("imageView${i + 1}", "id", packageName))
-//            imageView.setOnClickListener {
-//
-//            }
-//        }
+        for (i in 0 until hurufList.size) {
+            val imageButton: ImageButton = findViewById(resources.getIdentifier("imageButton${i+1}", "id", packageName))
+            imageButton.setOnClickListener {
+                navigateToDetailHuruf(hurufList[i])
+            }
+        }
 
         backtoMainButton_dhammah.setOnClickListener {
             val intent = Intent(this@ListAlphabet_dhammah,PracticeActivity::class.java)
@@ -45,5 +45,11 @@ class ListAlphabet_dhammah : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun navigateToDetailHuruf(huruf: HurufModel) {
+        val intent = Intent(this, DetailHuruf::class.java)
+        intent.putExtra("huruf", huruf)
+        startActivity(intent)
     }
 }

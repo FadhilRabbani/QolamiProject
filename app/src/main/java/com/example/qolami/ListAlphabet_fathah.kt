@@ -18,7 +18,7 @@ class ListAlphabet_fathah : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_alphabet_fathah)
 
-        alif_fathah=findViewById(R.id.alif_fathahBtn)
+        alif_fathah=findViewById(R.id.imageButton1)
         prevbutton_fathah=findViewById(R.id.prevbtn_fathah)
         nextbutton_fathah=findViewById(R.id.nextbtn_fathah)
         backtoMainBtn_fathah=findViewById(R.id.backtoMain_Fathah)
