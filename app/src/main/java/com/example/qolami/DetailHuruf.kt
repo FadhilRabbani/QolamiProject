@@ -3,6 +3,7 @@ package com.example.qolami
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -21,6 +22,7 @@ class DetailHuruf : AppCompatActivity() {
         val titleHijaiyah=findViewById<TextView>(R.id.title_hijaiyah)
         val wvYoutube=findViewById<YouTubePlayerView>(R.id.wv_youtube)
 
+
         huruf?.let{
         tvPelajaran.text=it.jenisPelajaran
         titleHijaiyah.text=it.titleHuruf
@@ -30,6 +32,6 @@ class DetailHuruf : AppCompatActivity() {
             }
         })
         }
+        }
 
     }
-}
