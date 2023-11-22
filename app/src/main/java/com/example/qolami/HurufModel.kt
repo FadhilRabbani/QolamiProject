@@ -1,3 +1,13 @@
 package com.example.qolami
 
-data class HurufModel(val huruf: String, val jenisPelajaran: String, val titleHuruf: String, val videoId: String, val gif: Int)
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class HurufModel(
+    val idIv: Int,
+    val huruf: String,
+    val jenisPelajaran: String,
+    val titleHuruf: String,
+    val videoId: String,
+    val gif: String) : Parcelable
