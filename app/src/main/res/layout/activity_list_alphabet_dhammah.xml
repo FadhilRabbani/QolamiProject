@@ -362,7 +362,7 @@
         app:srcCompat="@drawable/hamzah_dhammah" />
 
     <ImageButton
-        android:id="@+id/imageButton31"
+        android:id="@+id/imageButton28"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
