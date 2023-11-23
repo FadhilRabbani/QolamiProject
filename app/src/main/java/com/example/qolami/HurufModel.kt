@@ -10,4 +10,4 @@ data class HurufModel(
     val jenisPelajaran: String,
     val titleHuruf: String,
     val videoId: String,
-    val gif: String) : Parcelable
+    val gif: Int) : Parcelable
