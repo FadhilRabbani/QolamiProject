@@ -15,41 +15,39 @@ class ListAlphabet_fathah : AppCompatActivity() {
     lateinit var backtoMainBtn_fathah :Button
 
     private val hurufList: List<HurufModel> = listOf(
-        HurufModel(1,"alif_fathah","Pelajaran 2","Alif Berharakat Fathah","3p55spJk46s",R.raw.alif_fathah),
-        HurufModel(2,"ba_fathah","Pelajaran 2","Ba Berharakat Fathah","5GZIedsx9zQ",R.raw.ba_fathah),
-        HurufModel(3,"ta_fathah","Pelajaran 2","Ta Berharakat Fathah","5-UbyYiIq9M",R.raw.ta_fathah),
-        HurufModel(4,"tsa_fathah","Pelajaran 2","Tsa Berharakat Fathah","Y-dxKGP6FFE",R.raw.tsa_fathah),
-        HurufModel(5,"jim_fathah","Pelajaran 2","Jim Berharakat Fathah","_P49xmOg_FM",R.raw.jim_fathah),
-        HurufModel(6,"ha_fathah","Pelajaran 2","Ha Berharakat Fathah","ho2mp7mcG84",R.raw.ha_fathah),
-        HurufModel(7,"kho_fathah","Pelajaran 2","Kho Berharakat Fathah","yuAiHzeXBtY",R.raw.kho_fathah),
-        HurufModel(8,"dal_fathah","Pelajaran 2","Dal Berharakat Fathah","92U_em94NpY",R.raw.dal_fathah),
-        HurufModel(9,"dzal_fathah","Pelajaran 2","Dzal Berharakat Fathah","FC76mXWU_EY",R.raw.dzal_fathah),
-        HurufModel(10,"ro_fathah","Pelajaran 2","Ra Berharakat Fathah","Vf26PyueaxY",R.raw.ro_fathah),
-        HurufModel(11,"zayn_fathah","Pelajaran 2","Zayn Berharakat Fathah","87_IBOpsq24",R.raw.zayn_fathah),
-        HurufModel(12,"sin_fathah","Pelajaran 2","Sin Berharakat Fathah","98IiZhFm_Nk",R.raw.sin_fathah),
-        HurufModel(13,"syin_fathah","Pelajaran 2","Syin Berharakat Fathah","QDPmqg2iSOs",R.raw.syin_fathah),
-        HurufModel(14,"shod_fathah","Pelajaran 2","Shod Berharakat Fathah","Exv3ZFToEnI",R.raw.sod_fathah),
-        HurufModel(15,"dod_fathah","Pelajaran 2","Dhod Berharakat Fathah","3p2zWs7d84Q",R.raw.dod_fathah),
-        HurufModel(16,"to_fathah","Pelajaran 2","To Berharakat Fathah","DhneqkV2qwk",R.raw.to_fathah),
-        HurufModel(17,"zo_fathah","Pelajaran 2","Zo Berharakat Fathah","GRTo3Pc4r1I",R.raw.zo_fathah),
-        HurufModel(18,"ain_fathah","Pelajaran 2","Ain Berharakat Fathah","VEY2nnIHtK8",R.raw.ain_fathah),
-        HurufModel(19,"ghain_fathah","Pelajaran 2","Ghain Berharakat Fathah","ZYlDWl4I4eg",R.raw.ghain_fathah),
-        HurufModel(20,"fa_fathah","Pelajaran 2","Fa Berharakat Fathah","-P_TgzRjFcE",R.raw.fa_fathah),
-        HurufModel(21,"qaf_fathah","Pelajaran 2","Qaf Berharakat Fathah","GR2a8uLjcfE",R.raw.qof_fathah),
-        HurufModel(22,"kaf_fathah","Pelajaran 2","Kaf Berharakat Fathah","Zh89LO0ogAo",R.raw.kaf_fathah),
-        HurufModel(23,"lam_fathah","Pelajaran 2","Lam Berharakat Fathah","s5k__k9Yyhs",R.raw.lam_fathah),
-        HurufModel(24,"mim_fathah","Pelajaran 2","Mim Berharakat Fathah","mOS_jK54ryw",R.raw.mim_fathah),
-        HurufModel(25,"nun_fathah","Pelajaran 2","Nun Berharakat Fathah","rq7B6kLOH9w",R.raw.nun_fathah),
-        HurufModel(26,"wau_fathah","Pelajaran 2","Wau Berharakat Fathah","dfj8IJ_DvTw",R.raw.wa_fathah),
-        HurufModel(27,"ha2_fathah","Pelajaran 2","Ha Berharakat Fathah","RY_v8-_aa1o",R.raw.hamzah_fathah),
-        HurufModel(28,"ya_fathah","Pelajaran 2","Ya Berharakat Fathah","U7goKOpzfzw",R.raw.ya_fathah)
+        HurufModel(1,"alif_fathah","Pelajaran 2","Alif Berharakat Fathah","ntD81WB132A",R.raw.alif_fathah),
+        HurufModel(2,"ba_fathah","Pelajaran 2","Ba Berharakat Fathah","Ii477YjhDVk",R.raw.ba_fathah),
+        HurufModel(3,"ta_fathah","Pelajaran 2","Ta Berharakat Fathah","6UexQWMnx0I",R.raw.ta_fathah),
+        HurufModel(4,"tsa_fathah","Pelajaran 2","Tsa Berharakat Fathah","moa8jxvBM_g",R.raw.tsa_fathah),
+        HurufModel(5,"jim_fathah","Pelajaran 2","Jim Berharakat Fathah","OF0pHtNcJts",R.raw.jim_fathah),
+        HurufModel(6,"ha_fathah","Pelajaran 2","Ha Berharakat Fathah","uLXf6TiBhXo",R.raw.ha_fathah),
+        HurufModel(7,"kho_fathah","Pelajaran 2","Kho Berharakat Fathah","06mNtQn5hPM",R.raw.kho_fathah),
+        HurufModel(8,"dal_fathah","Pelajaran 2","Dal Berharakat Fathah","KLA7uwvxyvg",R.raw.dal_fathah),
+        HurufModel(9,"dzal_fathah","Pelajaran 2","Dzal Berharakat Fathah","bs-yAjuvs0k",R.raw.dzal_fathah),
+        HurufModel(10,"ro_fathah","Pelajaran 2","Ra Berharakat Fathah","zTJpyte5QHU",R.raw.ro_fathah),
+        HurufModel(11,"zayn_fathah","Pelajaran 2","Zayn Berharakat Fathah","jcL6tk5FIt8",R.raw.zayn_fathah),
+        HurufModel(12,"sin_fathah","Pelajaran 2","Sin Berharakat Fathah","T4rX3SeZH-c",R.raw.sin_fathah),
+        HurufModel(13,"syin_fathah","Pelajaran 2","Syin Berharakat Fathah","eEpYreBDeE8",R.raw.syin_fathah),
+        HurufModel(14,"shod_fathah","Pelajaran 2","Shod Berharakat Fathah","mLUaUAL-Ty8",R.raw.sod_fathah),
+        HurufModel(15,"dod_fathah","Pelajaran 2","Dhod Berharakat Fathah","YWbUdRmyQsQ",R.raw.dod_fathah),
+        HurufModel(16,"to_fathah","Pelajaran 2","To Berharakat Fathah","6FzZ3jQrvL8",R.raw.to_fathah),
+        HurufModel(17,"zo_fathah","Pelajaran 2","Zo Berharakat Fathah","lg441UMEv_Q",R.raw.zo_fathah),
+        HurufModel(18,"ain_fathah","Pelajaran 2","Ain Berharakat Fathah","06WeCyI7E5c",R.raw.ain_fathah),
+        HurufModel(19,"ghain_fathah","Pelajaran 2","Ghain Berharakat Fathah","GNDEM9GktSw",R.raw.ghain_fathah),
+        HurufModel(20,"fa_fathah","Pelajaran 2","Fa Berharakat Fathah","q9W37UTUPIU",R.raw.fa_fathah),
+        HurufModel(21,"qaf_fathah","Pelajaran 2","Qaf Berharakat Fathah","aBxg0IK6uBI",R.raw.qof_fathah),
+        HurufModel(22,"kaf_fathah","Pelajaran 2","Kaf Berharakat Fathah","7DKP8vW8AOo",R.raw.kaf_fathah),
+        HurufModel(23,"lam_fathah","Pelajaran 2","Lam Berharakat Fathah","XQaApdhUYVE",R.raw.lam_fathah),
+        HurufModel(24,"mim_fathah","Pelajaran 2","Mim Berharakat Fathah","M6rl_6dC66Q",R.raw.mim_fathah),
+        HurufModel(25,"nun_fathah","Pelajaran 2","Nun Berharakat Fathah","PyjozCgnyI8",R.raw.nun_fathah),
+        HurufModel(26,"wau_fathah","Pelajaran 2","Wa Berharakat Fathah","VsnSAjDNTXs",R.raw.wa_fathah),
+        HurufModel(27,"ha2_fathah","Pelajaran 2","Ha Berharakat Fathah","WHU0lJbWVuk",R.raw.hamzah_fathah),
+        HurufModel(28,"ya_fathah","Pelajaran 2","Ya Berharakat Fathah","3CzzT9ZO604",R.raw.ya_fathah)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_alphabet_fathah)
-
-        alif_fathah=findViewById(R.id.imageButton1)
         prevbutton_fathah=findViewById(R.id.prevbtn_fathah)
         nextbutton_fathah=findViewById(R.id.nextbtn_fathah)
         backtoMainBtn_fathah=findViewById(R.id.backtoMain_Fathah)
@@ -73,13 +71,7 @@ class ListAlphabet_fathah : AppCompatActivity() {
             val intent= Intent(this@ListAlphabet_fathah,ListAlphabet_hijaiyah::class.java)
             startActivity(intent)
         }
-        alif_fathah.setOnClickListener {
-            val intent= Intent(this@ListAlphabet_fathah,DetailHuruf::class.java)
-            startActivity(intent)
-        }
-
     }
-
     private fun navigateToDetailHuruf(huruf: HurufModel) {
         val intent = Intent(this, DetailHuruf::class.java)
         intent.putExtra("huruf", huruf)

@@ -34,6 +34,17 @@ class DetailHuruf : AppCompatActivity() {
         wvYoutube.addYouTubePlayerListener(object: AbstractYouTubePlayerListener(){
             override fun onReady(youTubePlayer: YouTubePlayer) {
                 youTubePlayer.loadVideo(huruf.videoId,0f)
+                youTubePlayer.addListener(object : AbstractYouTubePlayerListener(){
+                    override fun onStateChange(
+                        youTubePlayer: YouTubePlayer,
+                        state: PlayerConstants.PlayerState
+                    ) {
+                        if (state==PlayerConstants.PlayerState.ENDED){
+                            youTubePlayer.seekTo(0f)
+                            youTubePlayer.play()
+                        }
+                    }
+                })
             }
         })
             Glide.with(this)
@@ -43,5 +54,4 @@ class DetailHuruf : AppCompatActivity() {
                 .into(gif)
         }
         }
-
     }
