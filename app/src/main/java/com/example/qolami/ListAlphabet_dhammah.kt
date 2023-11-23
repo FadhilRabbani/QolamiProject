@@ -41,9 +41,7 @@ class ListAlphabet_dhammah : AppCompatActivity() {
         HurufModel(25,"nun_dammah","Pelajaran 4","Nun Berharakat Dammah","rq7B6kLOH9w",R.raw.nun_dammah),
         HurufModel(26,"wau_dammah","Pelajaran 4","Wau Berharakat Dammah","dfj8IJ_DvTw",R.raw.wa_dammah),
         HurufModel(27,"ha2_dammah","Pelajaran 4","Ha Berharakat Dammah","RY_v8-_aa1o",R.raw.hamzah_dammah),
-        HurufModel(28,"ya_dammah","Pelajaran 4","Ya Berharakat Dammah","U7goKOpzfzw",R.raw.ya_dammah),
-
-
+        HurufModel(28,"ya_dammah","Pelajaran 4","Ya Berharakat Dammah","U7goKOpzfzw",R.raw.ya_dammah)
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
