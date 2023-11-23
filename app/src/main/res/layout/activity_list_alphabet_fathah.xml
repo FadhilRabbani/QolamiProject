@@ -412,7 +412,7 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton34"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton31"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton28"
         app:srcCompat="@drawable/latihan_btn" />
 
     <ImageButton
@@ -423,6 +423,6 @@
         android:layout_marginEnd="4dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton32"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton31"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton28"
         app:srcCompat="@drawable/prev_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
