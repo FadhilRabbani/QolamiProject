@@ -12,4 +12,12 @@
     <color name="purple_item">#7030A0</color>
     <color name="red_item">#800000</color>
 
+
+    <color name="brown_item_pressed">#934D07</color>
+    <color name="orange_item_pressed">#F49535</color>
+    <color name="darkblue_item_pressed">#398AD5</color>
+    <color name="lightgreen_item_pressed">#06D806</color>
+    <color name="purple_item_pressed">#BA66FA</color>
+    <color name="red_item_pressed">#FF4848</color>
+
 </resources>

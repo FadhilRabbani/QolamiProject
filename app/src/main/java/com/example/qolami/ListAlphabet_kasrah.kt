@@ -67,7 +67,7 @@ class ListAlphabet_kasrah : AppCompatActivity() {
             startActivity(intent)
         }
         prevbutton_kasrah.setOnClickListener {
-            val intent = Intent(this@ListAlphabet_kasrah, ListAlphabet_kasrah::class.java)
+            val intent = Intent(this@ListAlphabet_kasrah, ListAlphabet_fathah::class.java)
             startActivity(intent)
         }
 

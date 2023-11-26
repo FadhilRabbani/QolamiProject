@@ -13,6 +13,9 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
     lateinit var backtomainButton_hijaiyah :Button
     lateinit var nextbutton_hijaiyah :ImageButton
     lateinit var prevbutton_hijaiyah :ImageButton
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_alphabet_hijaiyah)
@@ -50,16 +53,12 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
             mediaPlayer!!.release()
             mediaPlayer = null
         }
-
         val soundId = resources.getIdentifier("sound$buttonNumber", "raw", packageName)
         mediaPlayer = MediaPlayer.create(this, soundId)
-
-
         mediaPlayer?.setOnCompletionListener {
             mediaPlayer?.release()
             mediaPlayer = null
         }
-
         mediaPlayer?.start()
     }
 

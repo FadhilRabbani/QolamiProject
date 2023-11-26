@@ -18,12 +18,13 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstan
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-import java.io.InputStream
+
 
 class DetailHuruf : AppCompatActivity() {
     lateinit var prevbutton : ImageButton
     lateinit var nextbutton : ImageButton
     lateinit var backbutton : Button
+    private var youTubePlayer: YouTubePlayer? = null
 
     private val hurufList: List<HurufModel> = listOf(
         HurufModel(1,"alif_fathah","Pelajaran 2","Alif Berharakat Fathah","ntD81WB132A",R.raw.alif_fathah),
@@ -184,5 +185,4 @@ class DetailHuruf : AppCompatActivity() {
         intent.putExtra("huruf", huruf)
         startActivity(intent)
     }
-
 }
