@@ -64,7 +64,6 @@ class DetailHuruf : AppCompatActivity() {
         backbutton = findViewById(R.id.button2)
 
         setOnClick()
-
         huruf?.let{
             tvPelajaran.text=it.jenisPelajaran
             titleHijaiyah.text=it.titleHuruf
@@ -130,6 +129,7 @@ class DetailHuruf : AppCompatActivity() {
                     }
                 }
             }
+            finish()
         }
 
         prevbutton.setOnClickListener {
@@ -168,16 +168,24 @@ class DetailHuruf : AppCompatActivity() {
                     }
                 }
             }
+            finish()
         }
 
         backbutton.setOnClickListener {
             val intent= Intent(this,ListAlphabet_fathah::class.java)
             startActivity(intent)
+            onPause()
         }
     }
     private fun navigateToDetailHuruf(huruf: HurufModel) {
         val intent = Intent(this, DetailHuruf::class.java)
         intent.putExtra("huruf", huruf)
         startActivity(intent)
+    }
+
+    override fun onBackPressed() {
+        val intent=Intent(this,ListAlphabet_fathah::class.java)
+        startActivity(intent)
+        finish()
     }
 }
