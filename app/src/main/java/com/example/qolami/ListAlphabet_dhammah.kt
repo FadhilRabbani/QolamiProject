@@ -73,8 +73,10 @@ class ListAlphabet_dhammah : AppCompatActivity() {
     }
 
     private fun navigateToDetailHuruf(huruf: HurufModel) {
+        var type = "dhammah"
         val intent = Intent(this, DetailHuruf::class.java)
         intent.putExtra("huruf", huruf)
+        intent.putExtra("type", type)
         startActivity(intent)
     }
 }

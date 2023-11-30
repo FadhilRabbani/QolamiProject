@@ -73,8 +73,10 @@ class ListAlphabet_kasrah : AppCompatActivity() {
 
     }
     private fun navigateToDetailHuruf(huruf: HurufModel) {
+        var type = "kasrah"
         val intent = Intent(this, DetailHuruf::class.java)
         intent.putExtra("huruf", huruf)
+        intent.putExtra("type", type)
         startActivity(intent)
     }
 }

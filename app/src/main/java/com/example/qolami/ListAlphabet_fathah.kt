@@ -73,8 +73,10 @@ class ListAlphabet_fathah : AppCompatActivity() {
         }
     }
     private fun navigateToDetailHuruf(huruf: HurufModel) {
+        var type = "fathah"
         val intent = Intent(this, DetailHuruf::class.java)
         intent.putExtra("huruf", huruf)
+        intent.putExtra("type", type)
         startActivity(intent)
     }
 }
