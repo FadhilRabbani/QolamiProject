@@ -86,7 +86,6 @@ class DetailHuruf : AppCompatActivity() {
             Glide.with(this)
                 .asGif()
                 .load(huruf.gif)
-                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .into(gif)
         }
     }
@@ -95,6 +94,7 @@ class DetailHuruf : AppCompatActivity() {
         val huruf: HurufModel? = intent.getParcelableExtra("huruf")
         nextbutton.setOnClickListener {
             if (huruf != null) {
+                youTubePlayer?.pause()
                 when (huruf.idIv) {
                     1 -> navigateToDetailHuruf(hurufList[1])
                     2 -> navigateToDetailHuruf(hurufList[2])
@@ -129,11 +129,11 @@ class DetailHuruf : AppCompatActivity() {
                     }
                 }
             }
-            finish()
         }
 
         prevbutton.setOnClickListener {
             if (huruf != null) {
+                youTubePlayer?.pause()
                 when (huruf.idIv) {
                     1 -> navigateToDetailHuruf(hurufList[28])
                     2 -> navigateToDetailHuruf(hurufList[0])
@@ -168,13 +168,12 @@ class DetailHuruf : AppCompatActivity() {
                     }
                 }
             }
-            finish()
         }
 
         backbutton.setOnClickListener {
             val intent= Intent(this,ListAlphabet_fathah::class.java)
             startActivity(intent)
-            onPause()
+            youTubePlayer?.pause()
         }
     }
     private fun navigateToDetailHuruf(huruf: HurufModel) {
@@ -186,6 +185,6 @@ class DetailHuruf : AppCompatActivity() {
     override fun onBackPressed() {
         val intent=Intent(this,ListAlphabet_fathah::class.java)
         startActivity(intent)
-        finish()
+        youTubePlayer?.pause()
     }
 }

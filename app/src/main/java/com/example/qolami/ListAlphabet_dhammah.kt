@@ -25,8 +25,6 @@ class ListAlphabet_dhammah : AppCompatActivity() {
         HurufModel(9,"dzal_dammah","Pelajaran 4","Dzal Berharakat Dammah","FC76mXWU_EY",R.raw.dzal_dammah),
         HurufModel(10,"ro_dammah","Pelajaran 4","Ra Berharakat Dammah","Vf26PyueaxY",R.raw.ra_dammah),
         HurufModel(11,"zayn_dammah","Pelajaran 4","Zayn Berharakat Dammah","87_IBOpsq24",R.raw.zayn_dammah),
-        HurufModel(12,"sin_dammah","Pelajaran 4","Sin Berharakat Dammah","98IiZhFm_Nk",R.raw.sin_dammah),
-        HurufModel(13,"syin_dammah","Pelajaran 4","Syin Berharakat Dammah","QDPmqg2iSOs",R.raw.syin_dammah),
         HurufModel(14,"shod_dammah","Pelajaran 4","Shod Berharakat Dammah","Exv3ZFToEnI",R.raw.sod_dammah),
         HurufModel(15,"dod_dammah","Pelajaran 4","Dhod Berharakat Dammah","3p2zWs7d84Q",R.raw.dod_dammah),
         HurufModel(16,"to_dammah","Pelajaran 4","To Berharakat Dammah","DhneqkV2qwk",R.raw.to_dammah),
