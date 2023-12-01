@@ -33,9 +33,6 @@
             android:name=".ListAlphabet_hijaiyah"
             android:exported="true" />
         <activity
-            android:name=".FathahActivity"
-            android:exported="false" />
-        <activity
             android:name=".PracticeActivity"
             android:exported="false" />
         <activity
