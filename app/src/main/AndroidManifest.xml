@@ -13,22 +13,20 @@
         android:theme="@style/Theme.Qolami"
         tools:targetApi="31">
         <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
             android:name=".DetailHuruf"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".ListAlphabet_dhammah"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ListAlphabet_kasrah"
             android:exported="true"></activity>
         <activity
+            android:name=".ListAlphabet_dhammah"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ListAlphabet_kasrah"
+            android:exported="true" />
+        <activity
             android:name=".ListAlphabet_fathah"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ListAlphabet_hijaiyah"
             android:exported="true" />
