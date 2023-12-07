@@ -3,12 +3,6 @@ package com.example.qolami
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Parcelable
-import android.view.View
-import android.view.ViewGroup
-import android.webkit.WebResourceRequest
-import android.webkit.WebView
-import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -19,7 +13,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstan
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-import java.io.InputStream
+
 
 class DetailHuruf : AppCompatActivity() {
     lateinit var prevbutton : ImageButton
@@ -397,5 +391,17 @@ class DetailHuruf : AppCompatActivity() {
         startActivity(intent)
     }
 
-
+    override fun onBackPressed() {
+        val type: String? = intent.getStringExtra("type")
+        if (type == "kasrah") {
+            val intent= Intent(this,ListAlphabet_kasrah::class.java)
+            startActivity(intent)
+        } else if (type == "fathah") {
+            val intent= Intent(this,ListAlphabet_fathah::class.java)
+            startActivity(intent)
+        } else if (type == "dhammah") {
+            val intent= Intent(this,ListAlphabet_dhammah::class.java)
+            startActivity(intent)
+        }
+    }
 }
