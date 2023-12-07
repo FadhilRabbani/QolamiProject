@@ -20,5 +20,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, PracticeActivity::class.java)
             startActivity(intent)
         }
+
+        binding.iconAbout.setOnClickListener {
+            val intent = Intent(this@MainActivity,About::class.java)
+            startActivity(intent)
+        }
     }
 }
