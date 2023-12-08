@@ -1,6 +1,7 @@
 package com.example.qolami
 
 import android.content.Intent
+import android.media.Image
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +14,7 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
     lateinit var backtomainButton_hijaiyah :Button
     lateinit var nextbutton_hijaiyah :ImageButton
     lateinit var prevbutton_hijaiyah :ImageButton
+    lateinit var btnPelajaran : ImageButton
 
 
 
@@ -23,6 +25,7 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
         backtomainButton_hijaiyah=findViewById(R.id.backtoMain_hijaiyah)
         nextbutton_hijaiyah=findViewById(R.id.nextbtn_hijaiyah)
         prevbutton_hijaiyah=findViewById(R.id.prevbtn_hijaiyah)
+        btnPelajaran=findViewById(R.id.imageButton31)
 
 
         for (i in 1..30) {
@@ -41,6 +44,10 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
         }
         prevbutton_hijaiyah.setOnClickListener {
             val intent = Intent(this@ListAlphabet_hijaiyah,ListAlphabet_dhammah::class.java)
+            startActivity(intent)
+        }
+        btnPelajaran.setOnClickListener {
+            val intent = Intent(this@ListAlphabet_hijaiyah,PracticeActivity::class.java)
             startActivity(intent)
         }
     }

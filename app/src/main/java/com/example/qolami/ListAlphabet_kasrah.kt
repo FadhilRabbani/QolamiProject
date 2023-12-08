@@ -12,6 +12,7 @@ class ListAlphabet_kasrah : AppCompatActivity() {
     lateinit var backtoMainButton : Button
     lateinit var nextbutton_kasrah : ImageButton
     lateinit var prevbutton_kasrah : ImageButton
+    lateinit var btnPelajaran : ImageButton
 
     private val hurufList: List<HurufModel> = listOf(
         HurufModel(1,"alif_kasrah","Pelajaran 3","Alif Berharakat Kasrah","wJ8WaPcZM_M",R.raw.alif_kasrah),
@@ -50,6 +51,7 @@ class ListAlphabet_kasrah : AppCompatActivity() {
         backtoMainButton=findViewById(R.id.backtoMain_Kasrah)
         nextbutton_kasrah=findViewById(R.id.nextbtn_kasrah)
         prevbutton_kasrah=findViewById(R.id.prevbtn_kasrah)
+        btnPelajaran=findViewById(R.id.imageButton32)
 
         for (i in 0 until hurufList.size) {
             val imageButton: ImageButton = findViewById(resources.getIdentifier("imageButton${i+1}", "id", packageName))
@@ -68,6 +70,10 @@ class ListAlphabet_kasrah : AppCompatActivity() {
         }
         prevbutton_kasrah.setOnClickListener {
             val intent = Intent(this@ListAlphabet_kasrah, ListAlphabet_fathah::class.java)
+            startActivity(intent)
+        }
+        btnPelajaran.setOnClickListener {
+            val intent = Intent(this@ListAlphabet_kasrah, PracticeActivity::class.java)
             startActivity(intent)
         }
 

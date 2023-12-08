@@ -18,56 +18,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pelajaran_img_button" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button2"
         android:layout_width="239dp"
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#47453E"
-        android:fontFamily="@font/ramaraja"
-        android:text="Latihan"
-        android:textSize="28sp"
+        android:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/latihan_img_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/notes_icon" />
-
-    <Button
+    <ImageButton
         android:id="@+id/button3"
         android:layout_width="239dp"
         android:layout_height="55dp"
-        android:layout_marginTop="19dp"
-        android:backgroundTint="#47453E"
-        android:text="Ujian"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ujian_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@drawable/ujian_img_button" />
 
     <ImageView
         android:id="@+id/icon_about"

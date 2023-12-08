@@ -359,7 +359,7 @@
         android:background="@drawable/custom_shape_7"
         app:layout_constraintEnd_toStartOf="@+id/imageButton26"
         app:layout_constraintTop_toBottomOf="@+id/imageButton22"
-        app:srcCompat="@drawable/hamzah_dhammah" />
+        app:srcCompat="@drawable/habesar_dhammah" />
 
     <ImageButton
         android:id="@+id/imageButton28"
