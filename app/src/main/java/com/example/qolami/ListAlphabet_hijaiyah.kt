@@ -74,4 +74,10 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
         mediaPlayer?.release()
         mediaPlayer = null
     }
+
+    override fun onBackPressed() {
+        val intent= Intent(this,PracticeActivity::class.java)
+        startActivity(intent)
+    }
+
 }

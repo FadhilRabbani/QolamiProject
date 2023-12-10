@@ -85,4 +85,10 @@ class ListAlphabet_fathah : AppCompatActivity() {
         intent.putExtra("type", type)
         startActivity(intent)
     }
+
+    override fun onBackPressed() {
+        val intent= Intent(this,PracticeActivity::class.java)
+        startActivity(intent)
+    }
+
 }
