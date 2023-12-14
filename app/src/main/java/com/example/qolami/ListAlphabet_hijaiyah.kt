@@ -5,8 +5,10 @@ import android.media.Image
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Im
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 
 class ListAlphabet_hijaiyah : AppCompatActivity() {
 
@@ -15,6 +17,8 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
     lateinit var nextbutton_hijaiyah :ImageButton
     lateinit var prevbutton_hijaiyah :ImageButton
     lateinit var btnPelajaran : ImageButton
+    lateinit var btnLatihan : ImageButton
+    lateinit var btnUjian : ImageButton
 
 
 
@@ -26,6 +30,8 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
         nextbutton_hijaiyah=findViewById(R.id.nextbtn_hijaiyah)
         prevbutton_hijaiyah=findViewById(R.id.prevbtn_hijaiyah)
         btnPelajaran=findViewById(R.id.imageButton31)
+        btnLatihan=findViewById(R.id.imageButton35)
+        btnUjian=findViewById(R.id.imageButton34)
 
 
         for (i in 1..30) {
@@ -49,6 +55,12 @@ class ListAlphabet_hijaiyah : AppCompatActivity() {
         btnPelajaran.setOnClickListener {
             val intent = Intent(this@ListAlphabet_hijaiyah,PracticeActivity::class.java)
             startActivity(intent)
+        }
+        btnLatihan.setOnClickListener {
+            Toast.makeText(this,"Fitur Latihan masih dalam tahap pengembangan!", Toast.LENGTH_LONG).show()
+        }
+        btnUjian.setOnClickListener {
+            Toast.makeText(this,"Fitur Ujian masih dalam tahap pengembangan!", Toast.LENGTH_LONG).show()
         }
     }
 

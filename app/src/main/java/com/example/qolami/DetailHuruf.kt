@@ -3,22 +3,27 @@ package com.example.qolami
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Im
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstants
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-
+//import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YoutubePlayerFullScreenHelper
 
 class DetailHuruf : AppCompatActivity() {
     lateinit var prevbutton : ImageButton
     lateinit var nextbutton : ImageButton
     lateinit var backbutton : Button
+    lateinit var btnPelajaran :ImageButton
+    lateinit var btnLatihan : ImageButton
+    lateinit var btnUjian : ImageButton
 
     private val hurufList: List<HurufModel> = listOf(
         HurufModel(1,"alif_fathah","Pelajaran 2","Alif Berharakat Fathah","ntD81WB132A",R.raw.alif_fathah),
@@ -124,6 +129,9 @@ class DetailHuruf : AppCompatActivity() {
         prevbutton=findViewById(R.id.imageButton37)
         nextbutton=findViewById(R.id.imageButton33)
         backbutton = findViewById(R.id.button2)
+        btnPelajaran=findViewById(R.id.imageButton32)
+        btnLatihan=findViewById(R.id.imageButton35)
+        btnUjian=findViewById(R.id.imageButton34)
 
         setOnClick()
 
@@ -151,6 +159,16 @@ class DetailHuruf : AppCompatActivity() {
                 .load(huruf.gif)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .into(gif)
+        }
+        btnPelajaran.setOnClickListener {
+            val intent = Intent(this@DetailHuruf, PracticeActivity::class.java)
+            startActivity(intent)
+        }
+        btnLatihan.setOnClickListener {
+            Toast.makeText(this,"Fitur Latihan masih dalam tahap pengembangan!", Toast.LENGTH_LONG).show()
+        }
+        btnUjian.setOnClickListener {
+            Toast.makeText(this,"Fitur Ujian masih dalam tahap pengembangan!", Toast.LENGTH_LONG).show()
         }
     }
 

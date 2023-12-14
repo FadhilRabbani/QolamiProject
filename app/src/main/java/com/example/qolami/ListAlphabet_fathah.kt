@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 
 class ListAlphabet_fathah : AppCompatActivity() {
 
@@ -14,6 +15,8 @@ class ListAlphabet_fathah : AppCompatActivity() {
     lateinit var nextbutton_fathah :ImageButton
     lateinit var backtoMainBtn_fathah :Button
     lateinit var btnPelajaran: ImageButton
+    lateinit var btnLatihan : ImageButton
+    lateinit var btnUjian : ImageButton
 
     private val hurufList: List<HurufModel> = listOf(
         HurufModel(1,"alif_fathah","Pelajaran 2","Alif Berharakat Fathah","ntD81WB132A",R.raw.alif_fathah),
@@ -53,6 +56,8 @@ class ListAlphabet_fathah : AppCompatActivity() {
         nextbutton_fathah=findViewById(R.id.nextbtn_fathah)
         backtoMainBtn_fathah=findViewById(R.id.backtoMain_Fathah)
         btnPelajaran=findViewById(R.id.imageButton32)
+        btnLatihan=findViewById(R.id.imageButton35)
+        btnUjian=findViewById(R.id.imageButton34)
 
         for (i in 0 until hurufList.size) {
             val imageButton: ImageButton = findViewById(resources.getIdentifier("imageButton${i+1}", "id", packageName))
@@ -76,6 +81,12 @@ class ListAlphabet_fathah : AppCompatActivity() {
         btnPelajaran.setOnClickListener {
             val intent = Intent(this@ListAlphabet_fathah,PracticeActivity::class.java)
             startActivity(intent)
+        }
+        btnLatihan.setOnClickListener {
+            Toast.makeText(this,"Fitur Latihan masih dalam tahap pengembangan!", Toast.LENGTH_LONG).show()
+        }
+        btnUjian.setOnClickListener {
+            Toast.makeText(this,"Fitur Ujian masih dalam tahap pengembangan!", Toast.LENGTH_LONG).show()
         }
     }
     private fun navigateToDetailHuruf(huruf: HurufModel) {
