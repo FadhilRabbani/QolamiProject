@@ -24,6 +24,9 @@ class DetailHuruf : AppCompatActivity() {
     lateinit var btnPelajaran :ImageButton
     lateinit var btnLatihan : ImageButton
     lateinit var btnUjian : ImageButton
+    lateinit var wvYoutube: YouTubePlayerView
+
+
 
     private val hurufList: List<HurufModel> = listOf(
         HurufModel(1,"alif_fathah","Pelajaran 2","Alif Berharakat Fathah","ntD81WB132A",R.raw.alif_fathah),
@@ -124,7 +127,7 @@ class DetailHuruf : AppCompatActivity() {
         val huruf: HurufModel?=intent.getParcelableExtra("huruf")
         val tvPelajaran=findViewById<TextView>(R.id.tv_pelajaran)
         val titleHijaiyah=findViewById<TextView>(R.id.title_hijaiyah)
-        val wvYoutube=findViewById<YouTubePlayerView>(R.id.wv_youtube)
+        wvYoutube=findViewById<YouTubePlayerView>(R.id.wv_youtube)
         val gif=findViewById<ImageView>(R.id.iv_gif)
         prevbutton=findViewById(R.id.imageButton37)
         nextbutton=findViewById(R.id.imageButton33)
@@ -278,6 +281,7 @@ class DetailHuruf : AppCompatActivity() {
                     }
                 }
             }
+            onStop()
         }
 
         prevbutton.setOnClickListener {
@@ -386,6 +390,7 @@ class DetailHuruf : AppCompatActivity() {
                     }
                 }
             }
+            onStop()
         }
 
         backbutton.setOnClickListener {
@@ -421,5 +426,10 @@ class DetailHuruf : AppCompatActivity() {
             val intent= Intent(this,ListAlphabet_dhammah::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        wvYoutube.release()
     }
 }
