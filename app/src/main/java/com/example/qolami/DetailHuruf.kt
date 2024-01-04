@@ -416,6 +416,7 @@ class DetailHuruf : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+        onStop()
         val type: String? = intent.getStringExtra("type")
         if (type == "kasrah") {
             val intent= Intent(this,ListAlphabet_kasrah::class.java)
