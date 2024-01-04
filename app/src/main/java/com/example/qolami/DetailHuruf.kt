@@ -394,6 +394,7 @@ class DetailHuruf : AppCompatActivity() {
         }
 
         backbutton.setOnClickListener {
+            onStop()
             if (type == "kasrah") {
                 val intent= Intent(this,ListAlphabet_kasrah::class.java)
                 startActivity(intent)
