@@ -20,7 +20,7 @@ class ListAlphabet_kasrah : AppCompatActivity() {
     private val hurufList: List<HurufModel> = listOf(
         HurufModel(1,"alif_kasrah","Pelajaran 3","Alif Berharakat Kasrah","wJ8WaPcZM_M",R.raw.alif_kasrah),
         HurufModel(2,"ba_kasrah","Pelajaran 3","Ba Berharakat Kasrah","IrLP1XYuIjs",R.raw.ba_kasrah),
-        HurufModel(3,"ta_kasrah","Pelajaran 3","Ta Berharakat Kasrah","6UexQWMnx0I",R.raw.ta_kasrah),
+        HurufModel(3,"ta_kasrah","Pelajaran 3","Ta Berharakat Kasrah","4zN2OpUqJI8",R.raw.ta_kasrah),
         HurufModel(4,"tsa_kasrah","Pelajaran 3","Tsa Berharakat Kasrah","U5xikMGMdTg",R.raw.tsa_kasrah),
         HurufModel(5,"jim_kasrah","Pelajaran 3","Jim Berharakat Kasrah","uXO3saszpSk",R.raw.jim_kasrah),
         HurufModel(6,"ha_kasrah","Pelajaran 3","Ha Berharakat Kasrah","Y_-BPpF6AW8",R.raw.ha_kasrah),
