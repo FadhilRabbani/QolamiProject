@@ -3,7 +3,6 @@ package com.example.qolami
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.qolami.databinding.ActivityMainBinding
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.iconAbout.setOnClickListener {
-            val intent = Intent(this@MainActivity,About::class.java)
+            val intent = Intent(this@MainActivity,Tentang::class.java)
             startActivity(intent)
         }
     }

@@ -12,21 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Qolami"
         tools:targetApi="31">
+
         <activity
-            android:name=".About"
+            android:name=".Tentang"
             android:exported="false" />
+
         <activity
             android:name=".DetailHuruf"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ListAlphabet_dhammah"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ListAlphabet_kasrah"
             android:exported="true" />
         <activity
             android:name=".ListAlphabet_fathah"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ListAlphabet_hijaiyah"
             android:exported="true" />
@@ -35,13 +37,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+
     </application>
 
 </manifest>
