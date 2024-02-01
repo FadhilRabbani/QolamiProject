@@ -69,7 +69,7 @@
         <TextView
             android:id="@+id/textView31"
             android:layout_width="350dp"
-            android:layout_height="400dp"
+            android:layout_height="350dp"
             android:background="@drawable/custom_shape_14"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -257,14 +257,31 @@
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ali Ma’sum, M.Ed"
             android:fontFamily="@font/ramaraja"
-            android:textSize="16sp"
+            android:text="Ali Ma’sum, M.Ed"
             android:textColor="@color/black"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView14"
             app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.069"
             app:layout_constraintStart_toStartOf="@+id/textView14"
-            app:layout_constraintTop_toTopOf="@+id/textView14" />
+            app:layout_constraintTop_toTopOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.562" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Qolami Project adalah aplikasi yang bertujuan sebagai pembelajaran bahasa arab yang menggunakan Metode Qolami, karena metode Qolami
+itu sendiri belum pernah di pakai oleh pihak manapun sehingga membuat kami sebagai pengembangan aplikasi perangkat lunak menuangkan
+metodi Qolami ini kedalam suatu aplikasi, Sedangkan dari sisi pengguna aplikasi ini bertujuan untuk menjadikan aplikasi sebagai bentuk
+media pembelajaran dari berbagai usia bahkan bisa digunakan untuk para Guru agama untuk mengajari murid nya dengan mengenal metode Qolami ini. Metode Qolami juga dikenal dapat diartikan secara KBBI adalah Menulis dengan metode ini Qolami juga berbeda dengan metode yang lainya pastinya Maka dari itu kami sebagai Developer ingin menuangkan Metode ini kedalam Aplikasi berbentuk Mobile karna akan mudah diakses untuk semua pengguna"
+            android:textAlignment=""
+            app:layout_constraintBottom_toBottomOf="@+id/textView31"
+            app:layout_constraintEnd_toEndOf="@+id/textView31"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toTopOf="@+id/textView31"
+            app:layout_constraintVertical_bias="0.456" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
